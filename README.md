@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="wallpapers/catppuccin-wallpaper.jpg" alt="GNOME Catppuccin Macchiato Desktop Rice" width="100%" />
+  <img src="preview.png" alt="GNOME Catppuccin Macchiato Desktop Rice" width="100%" />
   <p align="center">
     <strong>Aesthetic, Cohesive &amp; Modern Catppuccin Macchiato Desktop Setup for GNOME</strong>
   </p>

@@ -1,0 +1,47 @@
+# /* ---- 💫 Starship Config - Single Line Blue Gradient 💫 ---- */
+
+add_newline = false
+format = """
+[](fg:#b7bdf8)\
+$os\
+[](bg:#8aadf4 fg:#b7bdf8)\
+$username\
+[](bg:#7dc4e4 fg:#8aadf4)\
+$directory\
+[](bg:#91d7e3 fg:#7dc4e4)\
+$git_branch\
+$git_status\
+[](fg:#91d7e3) \
+$character"""
+
+[os]
+disabled = false
+style = "bg:#b7bdf8 fg:#24273a bold"
+format = "[$symbol]($style)"
+
+[os.symbols]
+Fedora = " "
+
+[username]
+show_always = true
+style_user = "bg:#8aadf4 fg:#24273a bold"
+format = "[ $user ]($style)"
+
+[directory]
+style = "bg:#7dc4e4 fg:#24273a bold"
+format = "[ $path ]($style)"
+truncation_length = 3
+fish_style_pwd_dir_length = 1
+
+[git_branch]
+style = "bg:#91d7e3 fg:#24273a bold"
+symbol = " "
+format = "[ $symbol$branch]($style)"
+
+[git_status]
+style = "bg:#91d7e3 fg:#24273a bold"
+format = "[$all_status]($style)"
+
+[character]
+success_symbol = "[➜](bold #91d7e3)"
+error_symbol = "[➜](bold #ed8796)"

@@ -1,0 +1,36 @@
+# ---- 💫 Ghostty Config - Starship, Catppuccin & Cursor Trail 💫 ----
+custom-shader = shaders/cursor_sweep.glsl
+custom-shader = shaders/ripple_cursor.glsl
+# Core UI & Colors (Catppuccin Macchiato)
+foreground = #cad3f5
+background = #24273a
+cursor-color = #f4dbd6
+selection-background = #494d64
+selection-foreground = #cad3f5
+
+# Font Settings
+font-family = "FantasqueSansM Nerd Font Mono"
+font-size = 12
+adjust-cell-height = 10%
+# ------------------------------
+
+# Fix per Starship
+shell-integration = none
+term = xterm-256color
+
+# Window Settings
+window-width = 110
+window-height = 32
+window-save-state = always
+window-theme = dark
+unfocused-split-opacity = 0.5
+mouse-hide-while-typing = true
+
+# Conferma chiusura e istanze
+confirm-close-surface = false
+gtk-single-instance = true
+
+# Caricamento temi esterni (opzionali)
+config-file = ?~/.config/ghostty/theme.conf
+config-file = ?~/.config/ghostty/wallust.conf
+# ...

@@ -160,3 +160,23 @@ If you wish to manually re-import or edit the preset:
 ## 📜 License
 
 Distributed under the [MIT](LICENSE) License. Built with 💜 by [lexp-hub](https://github.com/lexp-hub).
+
+
+
+sudo bash -c '
+mv /etc/gdm/custom.conf /etc/gdm/custom.conf.bak 2>/dev/null
+cat << "EOF" > /etc/gdm/custom.conf
+[daemon]
+[security]
+[debug]
+EOF
+
+rm -rf /var/lib/gdm/.config /var/lib/gdm/.local /var/lib/gdm/.cache /etc/dconf/db/gdm.d
+chown -R gdm:gdm /var/lib/gdm
+
+dnf reinstall -y gdm gnome-shell
+restorecon -Rv /etc/gdm /var/lib/gdm /usr/share/gnome-shell
+
+systemctl restart gdm
+'
+
